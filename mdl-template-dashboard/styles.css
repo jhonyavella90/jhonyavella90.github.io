@@ -59,20 +59,6 @@ html, body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 16px;
-  height: 151px;
-}
-.demo-avatar-dropdown {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
 }
 
 .demo-navigation {
@@ -212,4 +198,37 @@ _:-ms-input-placeholder, :root .demo-graph {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/*override styles*/
+
+.demo-avatar {
+  height: 100%;
+  width: auto;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.demo-drawer-header {
+  max-height: 200px;
+}
+
+.demo-avatar-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 10px 0
+}
+
+.demo-avatar-info div {
+  text-align: center;
+  margin: 0 auto;
 }
